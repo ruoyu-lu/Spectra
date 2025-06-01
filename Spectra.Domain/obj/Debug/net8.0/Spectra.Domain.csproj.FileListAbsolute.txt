@@ -1,0 +1,13 @@
+/Users/ruoyulu/project/Spectra/Spectra.Domain/bin/Debug/net8.0/Spectra.Domain.deps.json
+/Users/ruoyulu/project/Spectra/Spectra.Domain/bin/Debug/net8.0/Spectra.Domain.dll
+/Users/ruoyulu/project/Spectra/Spectra.Domain/bin/Debug/net8.0/Spectra.Domain.pdb
+/Users/ruoyulu/project/Spectra/Spectra.Domain/obj/Debug/net8.0/Spectra.Domain.csproj.AssemblyReference.cache
+/Users/ruoyulu/project/Spectra/Spectra.Domain/obj/Debug/net8.0/Spectra.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ruoyulu/project/Spectra/Spectra.Domain/obj/Debug/net8.0/Spectra.Domain.AssemblyInfoInputs.cache
+/Users/ruoyulu/project/Spectra/Spectra.Domain/obj/Debug/net8.0/Spectra.Domain.AssemblyInfo.cs
+/Users/ruoyulu/project/Spectra/Spectra.Domain/obj/Debug/net8.0/Spectra.Domain.csproj.CoreCompileInputs.cache
+/Users/ruoyulu/project/Spectra/Spectra.Domain/obj/Debug/net8.0/Spectra.Domain.sourcelink.json
+/Users/ruoyulu/project/Spectra/Spectra.Domain/obj/Debug/net8.0/Spectra.Domain.dll
+/Users/ruoyulu/project/Spectra/Spectra.Domain/obj/Debug/net8.0/refint/Spectra.Domain.dll
+/Users/ruoyulu/project/Spectra/Spectra.Domain/obj/Debug/net8.0/Spectra.Domain.pdb
+/Users/ruoyulu/project/Spectra/Spectra.Domain/obj/Debug/net8.0/ref/Spectra.Domain.dll

@@ -95,5 +95,5 @@ Administrator (System Operator/Developer): Individuals responsible for deploying
 ### 5.3 External Service Interfaces
 - [ ] EIR5.3.1: As a developer, I want the system to integrate seamlessly with Azure AD B2C for user authentication and identity management, so that we can leverage a robust, secure, and scalable identity solution.
 - [ ] EIR5.3.2: As a developer, I want the system to utilize Azure Blob Storage for storing user-uploaded image files, so that we have a durable, scalable, and cost-effective solution for large object storage.
-- [ ] EIR5.3.3: As a developer, I want the system to use Azure Cosmos DB or Azure SQL Database for persisting application metadata (user profiles, image details, social graphs, comments), so that we have a reliable and scalable database backend.
+- [ ] EIR5.3.3: As a developer, I want the system to use PostgreSQL (e.g., Azure Database for PostgreSQL) for persisting application metadata (user profiles, image details, social graphs, comments), so that we have a reliable and scalable database backend.
 - [ ] EIR5.3.4: As a developer, I want the system to be able to integrate with Azure Functions for handling asynchronous background tasks (such as image post-processing or notifications), so that these operations do not impact the responsiveness of user-facing services.

@@ -11,7 +11,7 @@ This document records the key design decisions made for the Spectra project.
 *   **Cloud-Native Focus:** .NET Aspire is designed specifically for building observable, production-ready, and distributed applications, aligning with our goal of creating a cloud-native image sharing platform.
 *   **Simplified Orchestration:** Aspire provides built-in features for service discovery, resilience, and configuration, which simplifies the development and local orchestration of microservices. This is particularly beneficial given our microservice architecture outlined in `ARCHITECTURE.md`.
 *   **Developer Productivity:** Leverages the extensive .NET ecosystem, C# language features, and a familiar development experience for .NET developers, potentially speeding up development.
-*   **Integration with Azure:** Seamless integration with Azure services (as indicated in `REQUIREMENTS.md` EIR5.3.1 - EIR5.3.4) like Azure AD B2C, Azure Blob Storage, Azure Cosmos DB/SQL Database, and Azure Functions. Aspire facilitates the configuration and connection to these resources.
+*   **Integration with Azure:** Seamless integration with Azure services (as indicated in `REQUIREMENTS.md` EIR5.3.1 - EIR5.3.4) like Azure AD B2C, Azure Blob Storage, PostgreSQL (via Azure Database for PostgreSQL or self-hosted), and Azure Functions. Aspire facilitates the configuration and connection to these resources.
 *   **Observability:** .NET Aspire applications are observable by default, making it easier to monitor, log, and trace application behavior, which is crucial for maintaining system health (MAINT5.4) and troubleshooting (REL3.4).
 
 **Alternatives Considered:**
@@ -49,10 +49,12 @@ This document records the key design decisions made for the Spectra project.
 *   **Dashboard:** The Aspire dashboard provides a valuable overview of running services, logs, and traces locally, aiding in debugging and understanding inter-service communication.
 *   **Alignment with Production:** While not a production runtime itself (Kubernetes is planned for that, as per `ARCHITECTURE.MD`), Aspire helps define the application structure in a way that is more easily translated to production deployment manifests.
 
-**Alternatives Considered:**
+**Why .NET Aspire was Chosen:**
 
-*   **Docker Compose:** A common and effective tool for orchestrating containers locally. However, .NET Aspire provides a more integrated experience specifically tailored to .NET development, with features like automatic .NET project referencing and built-in dashboarding that Docker Compose alone doesn't offer out-of-the-box for .NET projects.
-*   **Minikube/Kind (Local Kubernetes):** While these provide a full Kubernetes environment locally, they can be more resource-intensive and have a steeper setup curve for purely local development iterations compared to Aspire's lightweight orchestration. Aspire can simplify the path *to* Kubernetes.
+*   **.NET-Native Integration:** Aspire provides seamless integration with .NET projects, automatic service discovery, and built-in support for .NET development patterns.
+*   **Simplified Development Experience:** The integrated dashboard, automatic container orchestration, and hot reload capabilities significantly improve the developer experience.
+*   **Production Alignment:** While Aspire is primarily for local development, it helps structure applications in a way that translates well to production Kubernetes deployments.
+*   **Reduced Complexity:** Eliminates the need for separate Docker Compose configurations and provides a unified development experience within the .NET ecosystem.
 
 ## 4. Key Architectural Patterns & Decisions
 
@@ -66,12 +68,12 @@ This document records the key design decisions made for the Spectra project.
     *   **Reason:** Improves application responsiveness by offloading long-running or non-critical tasks to background processes (PERF1.2, PERF1.3).
 *   **Cloud Storage for Images (Azure Blob Storage):** As per `REQUIREMENTS.md` (EIR5.3.2) and `ARCHITECTURE.md`.
     *   **Reason:** Provides a durable, scalable, and cost-effective solution for storing large binary files (IR2.1).
-*   **Database Choice (Azure Cosmos DB or Azure SQL Database):** As per `REQUIREMENTS.md` (EIR5.3.3) and `ARCHITECTURE.md`. The specific choice per microservice may vary.
-    *   **Reason:** Offers scalable and reliable data persistence. The choice between NoSQL (Cosmos DB) and relational (SQL Database) will depend on the specific data structure and query patterns of each microservice (SCAL6.2). For example, user profiles and social graphs might benefit from a NoSQL model, while transactional data might be better suited for a relational database.
+*   **Database Choice (PostgreSQL):** The primary database system will be PostgreSQL. This can be hosted on Azure (e.g., Azure Database for PostgreSQL) or self-managed.
+    *   **Reason:** PostgreSQL is a powerful, open-source object-relational database system with a strong reputation for reliability, feature robustness, and performance. It offers advanced SQL features, extensibility, and strong community support. It can effectively handle relational data for user profiles, image metadata, social graphs, and comments (SCAL6.2). Its ACID compliance is crucial for transactional integrity.
 
 ## 5. Future Considerations / To Be Decided (TBD)
 
-*   **Specific Database per Microservice:** While the options are Azure Cosmos DB and Azure SQL, the final choice for each microservice needs to be detailed based on its specific data model and access patterns.
+*   **Specific PostgreSQL Deployment Strategy:** Decision on whether to use a managed service like Azure Database for PostgreSQL or a self-hosted instance (e.g., in Kubernetes).
 *   **Caching Strategy:** Detailed caching mechanisms (e.g., CDN for images, Redis for API responses or session data) to further improve performance (PERF1.1).
 *   **Detailed CI/CD Pipeline Implementation:** Specific tools and configurations for the CI/CD pipeline (e.g., GitHub Actions workflows, Azure DevOps Pipelines).
 *   **Monitoring and Alerting Details:** Specific metrics to monitor and alerting thresholds using Azure Monitor (MONITORING_AND_LOGGING.md).

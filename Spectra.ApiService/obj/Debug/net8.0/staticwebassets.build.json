@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "OqQLlKsu5DtdrRSaGMhUYBKwx1FWUXN2zPb78udsqRM=",
+  "Source": "Spectra.ApiService",
+  "BasePath": "_content/Spectra.ApiService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,43 @@
+### Test Spectra Authentication API with PostgreSQL
+
+# Variables
+@baseUrl = https://localhost:7109
+@email = test@example.com
+@password = Test123!
+@displayName = Test User
+
+### Prerequisites: Ensure PostgreSQL is running
+# .NET Aspire: dotnet run --project Spectra.AppHost (automatically starts PostgreSQL)
+# Or use local PostgreSQL installation
+
+### 1. Register a new user
+POST {{baseUrl}}/api/auth/register
+Content-Type: application/json
+
+{
+  "email": "{{email}}",
+  "password": "{{password}}",
+  "confirmPassword": "{{password}}",
+  "displayName": "{{displayName}}"
+}
+
+### 2. Login with the registered user
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "{{email}}",
+  "password": "{{password}}",
+  "rememberMe": false
+}
+
+### 3. Get current user info (requires JWT token from login response)
+GET {{baseUrl}}/api/auth/me
+Authorization: Bearer YOUR_JWT_TOKEN_HERE
+
+### 4. Logout
+POST {{baseUrl}}/api/auth/logout
+Authorization: Bearer YOUR_JWT_TOKEN_HERE
+
+### 5. Test Swagger UI
+GET {{baseUrl}}/swagger/index.html

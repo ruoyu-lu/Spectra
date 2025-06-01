@@ -16,7 +16,7 @@
     *   **Kubernetes (Runtime):** The individual backend microservices defined by .NET Aspire (such as `Image Service API`, `User Profile API`, `Feed Service API`, `Notification API`, `Auth API`) are ultimately deployed and run as containers within a **Kubernetes** cluster. Kubernetes is responsible for the actual execution, scaling, fault tolerance, and rolling updates of these services.
 
     **Specific backend microservices include:**
-    *   `Image Service API`: Handles image uploads, downloads, and potentially metadata management (interacting with Azure DB).
+    *   `Image Service API`: Handles image uploads, downloads, and potentially metadata management (interacting with PostgreSQL).
     *   `User Profile API`: Manages user profile information.
     *   `Feed Service API`: Generates personalized content feeds for users.
     *   `Notification API`: Manages notification-related logic.
@@ -24,7 +24,7 @@
 
 5.  **Data & Storage:**
     *   **Azure Blob Storage:** Used for storing user-uploaded images and other binary large objects, offering high durability and scalability. The `Image Service API` interacts with it.
-    *   **Azure DB:** Stores structured application data, such as user information, image metadata (descriptions, tags), social graphs (follow lists), comments, etc. This could be a relational database (like Azure SQL Database) or a NoSQL database (like Azure Cosmos DB), depending on the needs of individual microservices. Services like `User Profile API` and `Feed Service API` would interact with this database.
+    *   **PostgreSQL (e.g., Azure Database for PostgreSQL):** Stores structured application data, such as user information, image metadata (descriptions, tags), social graphs (follow lists), comments, etc. This relational database provides strong consistency and support for complex queries. Services like `User Profile API` and `Feed Service API` would interact with this database.
 
 6.  **CI/CD (Continuous Integration/Continuous Deployment):**
     *   **GitHub (CI/CD Icon):** Serves as the code repository and likely triggers the CI/CD pipeline.

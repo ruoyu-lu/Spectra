@@ -1,0 +1,13 @@
+/Users/ruoyulu/project/Spectra/Spectra.ServiceDefaults/bin/Debug/net8.0/Spectra.ServiceDefaults.deps.json
+/Users/ruoyulu/project/Spectra/Spectra.ServiceDefaults/bin/Debug/net8.0/Spectra.ServiceDefaults.dll
+/Users/ruoyulu/project/Spectra/Spectra.ServiceDefaults/bin/Debug/net8.0/Spectra.ServiceDefaults.pdb
+/Users/ruoyulu/project/Spectra/Spectra.ServiceDefaults/obj/Debug/net8.0/Spectra.ServiceDefaults.csproj.AssemblyReference.cache
+/Users/ruoyulu/project/Spectra/Spectra.ServiceDefaults/obj/Debug/net8.0/Spectra.ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ruoyulu/project/Spectra/Spectra.ServiceDefaults/obj/Debug/net8.0/Spectra.ServiceDefaults.AssemblyInfoInputs.cache
+/Users/ruoyulu/project/Spectra/Spectra.ServiceDefaults/obj/Debug/net8.0/Spectra.ServiceDefaults.AssemblyInfo.cs
+/Users/ruoyulu/project/Spectra/Spectra.ServiceDefaults/obj/Debug/net8.0/Spectra.ServiceDefaults.csproj.CoreCompileInputs.cache
+/Users/ruoyulu/project/Spectra/Spectra.ServiceDefaults/obj/Debug/net8.0/Spectra.ServiceDefaults.sourcelink.json
+/Users/ruoyulu/project/Spectra/Spectra.ServiceDefaults/obj/Debug/net8.0/Spectra.ServiceDefaults.dll
+/Users/ruoyulu/project/Spectra/Spectra.ServiceDefaults/obj/Debug/net8.0/refint/Spectra.ServiceDefaults.dll
+/Users/ruoyulu/project/Spectra/Spectra.ServiceDefaults/obj/Debug/net8.0/Spectra.ServiceDefaults.pdb
+/Users/ruoyulu/project/Spectra/Spectra.ServiceDefaults/obj/Debug/net8.0/ref/Spectra.ServiceDefaults.dll

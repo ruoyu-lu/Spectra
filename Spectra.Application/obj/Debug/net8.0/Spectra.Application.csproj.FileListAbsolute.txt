@@ -1,0 +1,16 @@
+/Users/ruoyulu/project/Spectra/Spectra.Application/obj/Debug/net8.0/Spectra.Application.csproj.AssemblyReference.cache
+/Users/ruoyulu/project/Spectra/Spectra.Application/obj/Debug/net8.0/Spectra.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ruoyulu/project/Spectra/Spectra.Application/obj/Debug/net8.0/Spectra.Application.AssemblyInfoInputs.cache
+/Users/ruoyulu/project/Spectra/Spectra.Application/obj/Debug/net8.0/Spectra.Application.AssemblyInfo.cs
+/Users/ruoyulu/project/Spectra/Spectra.Application/obj/Debug/net8.0/Spectra.Application.csproj.CoreCompileInputs.cache
+/Users/ruoyulu/project/Spectra/Spectra.Application/obj/Debug/net8.0/Spectra.Application.sourcelink.json
+/Users/ruoyulu/project/Spectra/Spectra.Application/bin/Debug/net8.0/Spectra.Application.deps.json
+/Users/ruoyulu/project/Spectra/Spectra.Application/bin/Debug/net8.0/Spectra.Application.dll
+/Users/ruoyulu/project/Spectra/Spectra.Application/bin/Debug/net8.0/Spectra.Application.pdb
+/Users/ruoyulu/project/Spectra/Spectra.Application/bin/Debug/net8.0/Spectra.Domain.dll
+/Users/ruoyulu/project/Spectra/Spectra.Application/bin/Debug/net8.0/Spectra.Domain.pdb
+/Users/ruoyulu/project/Spectra/Spectra.Application/obj/Debug/net8.0/Spectra..B5C7EEF0.Up2Date
+/Users/ruoyulu/project/Spectra/Spectra.Application/obj/Debug/net8.0/Spectra.Application.dll
+/Users/ruoyulu/project/Spectra/Spectra.Application/obj/Debug/net8.0/refint/Spectra.Application.dll
+/Users/ruoyulu/project/Spectra/Spectra.Application/obj/Debug/net8.0/Spectra.Application.pdb
+/Users/ruoyulu/project/Spectra/Spectra.Application/obj/Debug/net8.0/ref/Spectra.Application.dll
