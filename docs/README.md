@@ -15,9 +15,7 @@ docs/
 │
 ├── 03_development/
 │   ├── DEVELOPMENT_ENVIRONMENT_SETUP.md # 开发环境搭建指南 (软件、工具、配置)
-│   ├── CODING_STANDARDS.md         # 编码规范 (C# 风格指南、命名约定等)
 │   ├── BUILD_AND_RUN.md          # 项目构建和本地运行指南
-│   ├── DEBUGGING_GUIDE.md        # 调试技巧和常见问题排查
 │   ├── LIBRARIES_AND_FRAMEWORKS.md # 使用的主要库和框架说明 (及选择理由)
 │   └── ASPIRE_INTEGRATION.md     # .NET Aspire 在项目中的具体使用和配置说明
 │
