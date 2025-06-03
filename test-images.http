@@ -1,0 +1,207 @@
+### Test Spectra Image Management API
+
+# Variables
+@baseUrl = https://localhost:7502
+@email = test@example.com
+@password = Test123!
+@token = YOUR_JWT_TOKEN_HERE
+@imageId = YOUR_IMAGE_ID_HERE
+@userId = YOUR_USER_ID_HERE
+
+### Prerequisites: 
+# 1. Ensure PostgreSQL is running via .NET Aspire
+# 2. Register and login to get JWT token
+# 3. Replace @token with actual JWT token from login response
+# 4. Replace @imageId and @userId with actual values from responses
+
+### 1. Login to get JWT token (if not already done)
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "{{email}}",
+  "password": "{{password}}",
+  "rememberMe": false
+}
+
+### 2. Upload a new image
+POST {{baseUrl}}/api/images
+Authorization: Bearer {{token}}
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="Title"
+
+My Beautiful Sunset
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="Description"
+
+A stunning sunset captured during my evening walk. The colors were absolutely breathtaking!
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="Tags"
+
+sunset, nature, photography, evening, beautiful
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="ImageFile"; filename="sunset.jpg"
+Content-Type: image/jpeg
+
+< ./test-image.jpg
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+### 3. Get a specific image by ID
+GET {{baseUrl}}/api/images/{{imageId}}
+Authorization: Bearer {{token}}
+
+### 4. Get current user's images (paginated)
+GET {{baseUrl}}/api/images/me?page=1&pageSize=10
+Authorization: Bearer {{token}}
+
+### 5. Get images from a specific user
+GET {{baseUrl}}/api/images/user/{{userId}}?page=1&pageSize=10
+Authorization: Bearer {{token}}
+
+### 6. Get all images (public feed)
+GET {{baseUrl}}/api/images?page=1&pageSize=20
+
+### 7. Get personalized feed (from followed users)
+GET {{baseUrl}}/api/images/feed?page=1&pageSize=15
+Authorization: Bearer {{token}}
+
+### 8. Update image metadata
+PUT {{baseUrl}}/api/images/{{imageId}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "title": "Updated: My Beautiful Sunset",
+  "description": "A stunning sunset captured during my evening walk. Updated with better description and new tags!",
+  "tags": "sunset, nature, photography, evening, beautiful, updated, golden-hour"
+}
+
+### 9. Get the updated image to verify changes
+GET {{baseUrl}}/api/images/{{imageId}}
+Authorization: Bearer {{token}}
+
+### 10. Test pagination - Get second page of user images
+GET {{baseUrl}}/api/images/me?page=2&pageSize=5
+Authorization: Bearer {{token}}
+
+### 11. Test large page size (should be capped at 50)
+GET {{baseUrl}}/api/images?page=1&pageSize=100
+
+### 12. Test invalid page number (should default to 1)
+GET {{baseUrl}}/api/images?page=0&pageSize=10
+
+### 13. Upload another image for testing
+POST {{baseUrl}}/api/images
+Authorization: Bearer {{token}}
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="Title"
+
+Mountain Landscape
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="Description"
+
+A majestic mountain view from my hiking trip
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="Tags"
+
+mountain, hiking, landscape, nature
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="ImageFile"; filename="mountain.jpg"
+Content-Type: image/jpeg
+
+< ./test-image2.jpg
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+### 14. Test validation - Upload without required fields
+POST {{baseUrl}}/api/images
+Authorization: Bearer {{token}}
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="Description"
+
+Image without title or file
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+### 15. Test validation - Update with invalid data
+PUT {{baseUrl}}/api/images/{{imageId}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "title": "",
+  "description": "This description is way too long and should exceed the 1000 character limit that we have set for descriptions in our validation rules. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+  "tags": "too, many, tags, that, exceed, the, character, limit, for, tags, field, which, should, be, limited, to, five, hundred, characters, but, this, string, is, much, longer, than, that, and, should, cause, a, validation, error, when, we, try, to, update, the, image, with, this, data, because, it, violates, our, business, rules, for, tag, length, limits, and, we, want, to, ensure, that, our, validation, is, working, properly, in, all, scenarios, including, edge, cases, like, this, one, where, someone, tries, to, submit, data, that, is, too, long, for, our, database, schema, and, business, requirements"
+}
+
+### 16. Test unauthorized access - Try to update without token
+PUT {{baseUrl}}/api/images/{{imageId}}
+Content-Type: application/json
+
+{
+  "title": "Unauthorized Update Attempt",
+  "description": "This should fail",
+  "tags": "unauthorized"
+}
+
+### 17. Test unauthorized access - Try to upload without token
+POST {{baseUrl}}/api/images
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="Title"
+
+Unauthorized Upload
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="ImageFile"; filename="test.jpg"
+Content-Type: image/jpeg
+
+< ./test-image.jpg
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+### 18. Test getting non-existent image
+GET {{baseUrl}}/api/images/00000000-0000-0000-0000-000000000000
+Authorization: Bearer {{token}}
+
+### 19. Test updating non-existent image
+PUT {{baseUrl}}/api/images/00000000-0000-0000-0000-000000000000
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "title": "Non-existent Image",
+  "description": "This should return 404",
+  "tags": "not-found"
+}
+
+### 20. Delete an image (WARNING: This will permanently delete the image)
+DELETE {{baseUrl}}/api/images/{{imageId}}
+Authorization: Bearer {{token}}
+
+### 21. Try to get the deleted image (should return 404)
+GET {{baseUrl}}/api/images/{{imageId}}
+Authorization: Bearer {{token}}
+
+### 22. Try to delete non-existent image
+DELETE {{baseUrl}}/api/images/00000000-0000-0000-0000-000000000000
+Authorization: Bearer {{token}}
+
+### 23. Get current user's images after deletion
+GET {{baseUrl}}/api/images/me?page=1&pageSize=10
+Authorization: Bearer {{token}}
+
+### Notes:
+# - Replace test-image.jpg and test-image2.jpg with actual image files
+# - Update @token with actual JWT token from login response
+# - Update @imageId with actual image ID from upload response
+# - Update @userId with actual user ID from auth response
+# - File uploads require actual image files in the project directory
+# - Some tests are destructive (delete operations) - use with caution
+# - Pagination parameters are validated (page >= 1, pageSize <= 50)
+# - All endpoints except public feeds require authentication
+# - Image files are stored locally in wwwroot/uploads/images/
+# - Supported formats: JPEG, PNG, GIF, WebP (max 5MB)

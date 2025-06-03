@@ -174,3 +174,5 @@
 /Users/ruoyulu/project/Spectra/Spectra.ApiService/obj/Debug/net8.0/Spectra.ApiService.pdb
 /Users/ruoyulu/project/Spectra/Spectra.ApiService/obj/Debug/net8.0/Spectra.ApiService.genruntimeconfig.cache
 /Users/ruoyulu/project/Spectra/Spectra.ApiService/obj/Debug/net8.0/ref/Spectra.ApiService.dll
+/Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Spectra.ApiService.staticwebassets.runtime.json
+/Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/SixLabors.ImageSharp.dll

@@ -23,7 +23,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Spectra.AppHost")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+48770de1d9b183c0956dda779bafd1cc335828fd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df6cc1563e8d7e2280b64bfec5c058612f6b0839")]
 [assembly: System.Reflection.AssemblyProductAttribute("Spectra.AppHost")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Spectra.AppHost")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

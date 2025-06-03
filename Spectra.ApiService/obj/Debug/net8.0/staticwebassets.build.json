@@ -1,11 +1,39 @@
 {
   "Version": 1,
-  "Hash": "OqQLlKsu5DtdrRSaGMhUYBKwx1FWUXN2zPb78udsqRM=",
+  "Hash": "vd0J0t7A9sizHLIcUaizGYTMxLQ7mSfmv1uwY6RkKGk=",
   "Source": "Spectra.ApiService",
   "BasePath": "_content/Spectra.ApiService",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "Spectra.ApiService/wwwroot",
+      "Source": "Spectra.ApiService",
+      "ContentRoot": "/Users/ruoyulu/project/Spectra/Spectra.ApiService/wwwroot/",
+      "BasePath": "_content/Spectra.ApiService",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/ruoyulu/project/Spectra/Spectra.ApiService/wwwroot/uploads/images/e068a185-fa07-4e83-acc5-d26e404c4668.png",
+      "SourceId": "Spectra.ApiService",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ruoyulu/project/Spectra/Spectra.ApiService/wwwroot/",
+      "BasePath": "_content/Spectra.ApiService",
+      "RelativePath": "uploads/images/e068a185-fa07-4e83-acc5-d26e404c4668.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/images/e068a185-fa07-4e83-acc5-d26e404c4668.png"
+    }
+  ]
 }

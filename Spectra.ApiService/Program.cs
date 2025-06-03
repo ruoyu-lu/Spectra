@@ -40,9 +40,11 @@ builder.Services.AddAuthenticationServices(builder.Configuration);
 builder.Services.AddScoped<IJwtService, JwtService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IImageService, ImageService>();
 
 // Add repositories
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IImageRepository, ImageRepository>();
 
 // Add controllers
 builder.Services.AddControllers();
@@ -116,6 +118,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseStaticFiles(); // Enable serving static files from wwwroot
 app.UseCors("AllowReactApp");
 app.UseAuthentication();
 app.UseAuthorization();

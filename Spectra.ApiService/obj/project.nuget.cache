@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "CCP8f7zJo4U=",
+  "dgSpecHash": "r8tXGhXr/GE=",
   "success": true,
   "projectFilePath": "/Users/ruoyulu/project/Spectra/Spectra.ApiService/Spectra.ApiService.csproj",
   "expectedPackageFiles": [
@@ -108,6 +108,7 @@
     "/Users/ruoyulu/.nuget/packages/polly.core/8.4.2/polly.core.8.4.2.nupkg.sha512",
     "/Users/ruoyulu/.nuget/packages/polly.extensions/8.4.2/polly.extensions.8.4.2.nupkg.sha512",
     "/Users/ruoyulu/.nuget/packages/polly.ratelimiting/8.4.2/polly.ratelimiting.8.4.2.nupkg.sha512",
+    "/Users/ruoyulu/.nuget/packages/sixlabors.imagesharp/3.1.8/sixlabors.imagesharp.3.1.8.nupkg.sha512",
     "/Users/ruoyulu/.nuget/packages/swashbuckle.aspnetcore/6.7.3/swashbuckle.aspnetcore.6.7.3.nupkg.sha512",
     "/Users/ruoyulu/.nuget/packages/swashbuckle.aspnetcore.swagger/6.7.3/swashbuckle.aspnetcore.swagger.6.7.3.nupkg.sha512",
     "/Users/ruoyulu/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.7.3/swashbuckle.aspnetcore.swaggergen.6.7.3.nupkg.sha512",

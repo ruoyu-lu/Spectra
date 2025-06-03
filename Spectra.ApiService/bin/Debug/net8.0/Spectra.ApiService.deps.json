@@ -1270,6 +1270,14 @@
           }
         }
       },
+      "SixLabors.ImageSharp/3.1.8": {
+        "runtime": {
+          "lib/net6.0/SixLabors.ImageSharp.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.1.8.0"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore/6.7.3": {
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "6.0.5",
@@ -1455,6 +1463,7 @@
           "Microsoft.AspNetCore.Identity": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.8",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
+          "SixLabors.ImageSharp": "3.1.8",
           "Spectra.Domain": "1.0.0",
           "System.IdentityModel.Tokens.Jwt": "8.1.0"
         },
@@ -2244,6 +2253,13 @@
       "sha512": "sha512-ehTImQ/eUyO07VYW2WvwSmU9rRH200SKJ/3jku9rOkyWE0A2JxNFmAVms8dSn49QLSjmjFRRSgfNyOgr/2PSmA==",
       "path": "polly.ratelimiting/8.4.2",
       "hashPath": "polly.ratelimiting.8.4.2.nupkg.sha512"
+    },
+    "SixLabors.ImageSharp/3.1.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8eJkROLGh6DBQLR666q2aOpAaean2puZaZ6Ur9YxoyGzjaZhv8OJSxtnDou54+OXMkXtLUdyQC0so47sOsqZjg==",
+      "path": "sixlabors.imagesharp/3.1.8",
+      "hashPath": "sixlabors.imagesharp.3.1.8.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/6.7.3": {
       "type": "package",
