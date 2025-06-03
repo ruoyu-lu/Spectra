@@ -5,6 +5,8 @@
 /Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Spectra.ApiService.runtimeconfig.json
 /Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Spectra.ApiService.dll
 /Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Spectra.ApiService.pdb
+/Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Aspire.Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/HealthChecks.NpgSql.dll
 /Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Google.Protobuf.dll
 /Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Grpc.Core.Api.dll
 /Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Grpc.Net.Client.dll
@@ -25,6 +27,7 @@
 /Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Design.dll
 /Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll
 /Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Microsoft.Extensions.AmbientMetadata.Application.dll
+/Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Microsoft.Extensions.Caching.Memory.dll
 /Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Microsoft.Extensions.Compliance.Abstractions.dll
 /Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Binder.dll
 /Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll
@@ -34,6 +37,9 @@
 /Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Microsoft.Extensions.Diagnostics.dll
 /Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Microsoft.Extensions.Diagnostics.Abstractions.dll
 /Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Microsoft.Extensions.Diagnostics.ExceptionSummarization.dll
+/Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Microsoft.Extensions.Diagnostics.HealthChecks.dll
+/Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+/Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore.dll
 /Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Microsoft.Extensions.Features.dll
 /Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Microsoft.Extensions.Hosting.Abstractions.dll
 /Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Microsoft.Extensions.Http.dll
@@ -60,6 +66,10 @@
 /Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Microsoft.IO.RecyclableMemoryStream.dll
 /Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Microsoft.OpenApi.dll
 /Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Mono.TextTemplating.dll
+/Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Npgsql.dll
+/Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Npgsql.DependencyInjection.dll
+/Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Npgsql.OpenTelemetry.dll
 /Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/OpenTelemetry.dll
 /Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/OpenTelemetry.Api.dll
 /Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/OpenTelemetry.Api.ProviderBuilderExtensions.dll
@@ -164,13 +174,3 @@
 /Users/ruoyulu/project/Spectra/Spectra.ApiService/obj/Debug/net8.0/Spectra.ApiService.pdb
 /Users/ruoyulu/project/Spectra/Spectra.ApiService/obj/Debug/net8.0/Spectra.ApiService.genruntimeconfig.cache
 /Users/ruoyulu/project/Spectra/Spectra.ApiService/obj/Debug/net8.0/ref/Spectra.ApiService.dll
-/Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Npgsql.dll
-/Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
-/Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/HealthChecks.NpgSql.dll
-/Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Aspire.Npgsql.EntityFrameworkCore.PostgreSQL.dll
-/Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Microsoft.Extensions.Caching.Memory.dll
-/Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Microsoft.Extensions.Diagnostics.HealthChecks.dll
-/Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
-/Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore.dll
-/Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Npgsql.DependencyInjection.dll
-/Users/ruoyulu/project/Spectra/Spectra.ApiService/bin/Debug/net8.0/Npgsql.OpenTelemetry.dll

@@ -1,7 +1,7 @@
 ### Test Spectra Authentication API with PostgreSQL
 
 # Variables
-@baseUrl = https://localhost:7109
+@baseUrl = https://localhost:7502
 @email = test@example.com
 @password = Test123!
 @displayName = Test User

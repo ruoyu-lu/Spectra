@@ -11,6 +11,8 @@ var database = postgres.AddDatabase("spectra-db");
 var apiService = builder.AddProject<Projects.Spectra_ApiService>("apiservice")
     .WithReference(database);
 
+
+
 // Add web frontend with API reference
 builder.AddProject<Projects.Spectra_Web>("webfrontend")
     .WithExternalHttpEndpoints()

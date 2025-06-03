@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Spectra.Domain\Spectra.Domain.csproj" />
+    <ProjectReference Include="..\Spectra.Application\Spectra.Application.csproj" />
   </ItemGroup>
 
 </Project>

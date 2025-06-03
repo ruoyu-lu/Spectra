@@ -16,3 +16,5 @@
 /Users/ruoyulu/project/Spectra/Spectra.Infrastructure/obj/Debug/net8.0/Spectra.Infrastructure.pdb
 /Users/ruoyulu/project/Spectra/Spectra.Infrastructure/obj/Debug/net8.0/Spectra.Infrastructure.genruntimeconfig.cache
 /Users/ruoyulu/project/Spectra/Spectra.Infrastructure/obj/Debug/net8.0/ref/Spectra.Infrastructure.dll
+/Users/ruoyulu/project/Spectra/Spectra.Infrastructure/bin/Debug/net8.0/Spectra.Application.dll
+/Users/ruoyulu/project/Spectra/Spectra.Infrastructure/bin/Debug/net8.0/Spectra.Application.pdb

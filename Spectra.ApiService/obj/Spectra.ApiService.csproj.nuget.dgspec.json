@@ -282,6 +282,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "/Users/ruoyulu/project/Spectra/Spectra.Application/Spectra.Application.csproj": {
+                "projectPath": "/Users/ruoyulu/project/Spectra/Spectra.Application/Spectra.Application.csproj"
+              },
               "/Users/ruoyulu/project/Spectra/Spectra.Domain/Spectra.Domain.csproj": {
                 "projectPath": "/Users/ruoyulu/project/Spectra/Spectra.Domain/Spectra.Domain.csproj"
               }

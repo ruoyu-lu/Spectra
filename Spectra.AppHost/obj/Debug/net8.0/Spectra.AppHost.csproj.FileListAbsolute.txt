@@ -5,6 +5,7 @@
 /Users/ruoyulu/project/Spectra/Spectra.AppHost/bin/Debug/net8.0/Spectra.AppHost.pdb
 /Users/ruoyulu/project/Spectra/Spectra.AppHost/bin/Debug/net8.0/Aspire.Hosting.dll
 /Users/ruoyulu/project/Spectra/Spectra.AppHost/bin/Debug/net8.0/Aspire.Hosting.AppHost.dll
+/Users/ruoyulu/project/Spectra/Spectra.AppHost/bin/Debug/net8.0/Aspire.Hosting.PostgreSQL.dll
 /Users/ruoyulu/project/Spectra/Spectra.AppHost/bin/Debug/net8.0/Fractions.dll
 /Users/ruoyulu/project/Spectra/Spectra.AppHost/bin/Debug/net8.0/Google.Protobuf.dll
 /Users/ruoyulu/project/Spectra/Spectra.AppHost/bin/Debug/net8.0/Grpc.AspNetCore.Server.dll
@@ -73,4 +74,3 @@
 /Users/ruoyulu/project/Spectra/Spectra.AppHost/obj/Debug/net8.0/Spectra.AppHost.pdb
 /Users/ruoyulu/project/Spectra/Spectra.AppHost/obj/Debug/net8.0/Spectra.AppHost.genruntimeconfig.cache
 /Users/ruoyulu/project/Spectra/Spectra.AppHost/obj/Debug/net8.0/ref/Spectra.AppHost.dll
-/Users/ruoyulu/project/Spectra/Spectra.AppHost/bin/Debug/net8.0/Aspire.Hosting.PostgreSQL.dll
